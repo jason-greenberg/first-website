@@ -4,9 +4,243 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Two</title>
+  <title>IV Housemate Quiz</title>
+  <link rel="stylesheet" href="./style-page-two.css">
 </head>
 <body>
-  
+
+  <div class="navigation-bar">
+    <div class="nav-el-box"><a href="./page-one.html" class="navigation-elements">Scrappy Times</a></div>
+    <div class="nav-el-box"><a href="./page-two.html" class="navigation-elements">Article 1</a></div>
+    <div class="nav-el-box"><a href="./page-three.html" target="_blank" class="navigation-elements">Article 2</a></div>
+    <div class="nav-el-box"><a href="./page-four.html" target="_blank" class="navigation-elements">Article 3</a></div>
+    <div class="nav-el-box"><a href="#" target="_blank" class="navigation-elements">Extra</a></div>
+  </div>
+
+  <div class="publication-body">
+
+    <div class="publication-title" id="title-container">
+      <h1 id="the-scrappy">the Scrappy</h1>
+      <h2 id="times">TIMES</h2></h1>
+    </div>
+
+    <div class="article-heading">
+      <h3 id="article-title">Which kind of Isla Vista roommate are you?</h3>
+      <h6 id="byline">By Jason Greenberg</h6>
+    </div>
+
+    <p id="survey-blurb">
+      Did you just move in to Isla Vista? 
+      Are you still figuring out housemate roles and responsibilities? 
+      Save some time by taking this quick quiz to find out exactly who you will be to your new live-in friends.
+      Please consider the following questions:
+    </p>
+
+    <form action="#" method="post" id="survey">
+      <fieldset>
+
+        <div class="fields">
+
+          <div class="name-field field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="full_name">
+          </div>
+
+          <div class="email-field field">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email_address">
+          </div>
+
+          <div class="question-one field">
+            <p class="desc">
+              You see your roommate put some tasty Woodstock leftovers in the fridge, what do you do?
+            </p>
+
+            <div class="radio-buttons">
+              <div>
+                <input type="radio" name="woodstock_leftovers" id="have">
+                <label for="have">Have your way with them.</label>
+              </div>
+              <div>
+                <input type="radio" name="woodstock_leftovers" id="take">
+                <label for="take">Take a few small, guilty bites.</label>
+              </div>
+              <div>
+                <input type="radio" name="woodstock_leftovers" id="devour">
+                <label for="devour">Devour all of it and move out without warning.</label>
+              </div>
+              <div>
+                <input type="radio" name="woodstock_leftovers" id="invite-friends">
+                <label for="invite-friends">Invite some friends over to share in your good fortune.</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-two field">
+            <p class="desc">
+              The dishwasher is clean and ready to unload, you...
+            </p>
+
+            <div class="radio-buttons">
+              <div>
+                <input type="radio" name="dishwasher_clean" id="run-again">
+                <label for="run-again">Run it again.</label>
+              </div>
+              <div>
+                <input type="radio" name="dishwasher_clean" id="pour-sriracha">
+                <label for="pour-sriracha">Pour some sriracha-mayo on the top rack and leave it for someone else.</label>
+              </div>
+              <div>
+                <input type="radio" name="dishwasher_clean" id="put-away">
+                <label for="put-away">Put away the dishes.</label>
+              </div>
+              <div>
+                <input type="radio" name="dishwasher_clean" id="nap">
+                <label for="nap">Take a 7pm nap.</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-three field">
+            <p class="desc">
+              It’s late Saturday night and you’re bringing home a hottie you met but your roommate is asleep in bed. How do you proceed?
+            </p>
+
+            <div class="radio-buttons">
+              <div>
+                <input type="radio" name="overnight_guest" id="text-them">
+                <label for="text-them">Be respectful and shoot them a text 45 seconds before bursting in.</label>
+              </div>
+              <div>
+                <input type="radio" name="overnight_guest" id="turn-loose">
+                <label for="turn-loose">Turn your arm candy loose and cry yourself to sleep with UCSB’s shitty meme page.</label>
+              </div>
+              <div>
+                <input type="radio" name="overnight_guest" id="anyas-bed">
+                <label for="anyas-bed">Use Anya’s bed, she’s out of town.</label>
+              </div>
+              <div>
+                <input type="radio" name="overnight_guest" id="is-roommate">
+                <label for="is-roommate">The hottie is my roommate.</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-four field">
+            <p class="desc">
+              What is your favorite cheap food to make at home?
+            </p>
+
+            <div class="radio-buttons">
+              <div>
+                <input type="radio" name="cheap_food" id="mac">
+                <label for="mac">Dollar store mac and cheese.</label>
+              </div>
+              <div>
+                <input type="radio" name="cheap_food" id="attention">
+                <label for="attention">I just eat attention.</label>
+              </div>
+              <div>
+                <input type="radio" name="cheap_food" id="hana-kitchen">
+                <label for="hana-kitchen">Hana Kitchen.</label>
+              </div>
+              <div>
+                <input type="radio" name="cheap_food" id="potato-salad">
+                <label for="potato-salad">Defrosted potato salad.</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-five field">
+            <p class="desc">
+              How do you deal with pressure from an upcoming rent payment?
+            </p>
+
+            <div class="radio-buttons">
+              <div>
+                <input type="radio" name="upcoming_rent" id="tylenol-pm">
+                <label for="tylenol-pm">Pop a handful of Tylenol PMs and go for a bike ride.</label>
+              </div>
+              <div>
+                <input type="radio" name="upcoming_rent" id="call-dad">
+                <label for="call-dad">Call Dad, laugh at all his jokes, and wait 10 minutes before asking for money that could have been saved by living on campus.</label>
+              </div>
+              <div>
+                <input type="radio" name="upcoming_rent" id="loan-series">
+                <label for="loan-series">Take out a series of loans that pay for each prior loan.</label>
+              </div>
+              <div>
+                <input type="radio" name="upcoming_rent" id="evade">
+                <label for="evade">Talk to AS Legal about rent evasion.study_area</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-six field">
+            <p class="desc">
+              Which part of the house will you designate as a study area?
+            </p>
+
+            <div class="radio-buttons">
+              <div>
+                <input type="radio" name="study_area" id="my-twin">
+                <label for="my-twin">My lofted twin bed.</label>
+              </div>
+              <div>
+                <input type="radio" name="study_area" id="underneath-twin">
+                <label for="underneath-twin">Underneath my loften twin bed.</label>
+              </div>
+              <div>
+                <input type="radio" name="study_area" id="across-twin">
+                <label for="across-twin">Across from my lofted twin bed.</label>
+              </div>
+              <div>
+                <input type="radio" name="study_area" id="same-twin">
+                <label for="same-twin">The same place I eat, sleep, and exercise—my lofted twin bed.</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="question-seven field">
+            <p class="desc">
+              Where do you like to decompress after a long day of classes?
+            </p>
+
+            <div class="radio-buttons">
+              <div>
+                <input type="radio" name="where_decompress" id="smashed-smash">
+                <label for="smashed-smash">Get pleasantly smashed while playing Smash.</label>
+              </div>
+              <div>
+                <input type="radio" name="where_decompress" id="ikea">
+                <label for="ikea">Browsing through Ikea furniture collections.</label>
+              </div>
+              <div>
+                <input type="radio" name="where_decompress" id="n-a">
+                <label for="n-a">N/A</label>
+              </div>
+              <div>
+                <input type="radio" name="where_decompress" id="pester-favreau">
+                <label for="pester-favreau">Pestering Jon Favreau on Twitter to cook in my house like in Chef.</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="comments field">
+            <div><label for="comments" id="comment-label" class="desc">Additional details for us to consider (optional):</label></div>
+            <textarea name="comments" id="comments"></textarea>
+          </div>
+
+          <div class="submit">
+            <button type="submit" id="button">Crunch the numbers</button>
+          </div>
+
+        </div>
+
+      </fieldset>
+    </form>
+
+  </div>
+
 </body>
 </html>

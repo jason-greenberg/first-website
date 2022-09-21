@@ -1,16 +1,9 @@
 @media screen and (min-width: 800px; max-width: 925px) and (max-width: 925px) {
-  .article-previews {
-    display: flex;
-    flex-direction: column;
-  }
+
 }
 
 @media screen and (min-width: 800px) {
   body {
-  }
-
-  .navigation-bar {
-    min-width: 600px;
   }
 
   .tease-title {
@@ -57,6 +50,16 @@
     height: 250px;
     align-self: center;
   }
+
+  .article-one-tease {
+    margin-left: 15px;
+  }
+  
+  .publication-title,
+  .article-previews,
+  .cover-story {
+    margin-left: 20px;
+  }
   
   .tease-desc {
     margin-bottom: 5px;
@@ -69,13 +72,7 @@
 
 @media screen and (max-width: 800px) {
   body {
-    max-width: 90%;
-  }
-
-  .navigation-bar {
-    max-width: 600px;
-    margin: 0;
-    padding: 0;
+    max-width: 100%;
   }
 
   .nav-el-box {
@@ -100,6 +97,7 @@
     width: 100%;
     margin-right: 0;
     margin-top: 30px;
+    margin-left: 0;
   }
 
   #iv-roommate-desc {
@@ -192,10 +190,11 @@ ol {
 .navigation-bar {
   display: flex;
   justify-content: space-between;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
   border-bottom: 1px solid lightblue;
   background-color: #F24333;
+  width: 100%;
 }
 
 .navigation-bar:hover {
@@ -226,16 +225,6 @@ h1 {
 }
 
 .article-one-tease {
-  margin-left: 15px;
-}
-
-.publication-title,
-.article-previews,
-.cover-story {
-  margin-left: 20px;
-}
-
-.article-one-tease {
   color: #564D4A;
 }
 
@@ -255,7 +244,7 @@ h1 {
   font-size: 40px;
   text-align: center;
   padding-top: 15px;
-  margin: 30px auto 0 auto;
+  margin: 50px auto 20px auto;
 }
 
 #quiz-hook:hover {
@@ -297,6 +286,7 @@ h4.tease-title:hover {
   background-color: rgb(244, 232, 216);
   max-width: 100%;
   height: auto;
+  margin-top: 20px;
 }
 
 #disclaimer {
